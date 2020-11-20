@@ -10,7 +10,7 @@ int main(void)
     printf("Choose the Character you want to draw with : \n");
     scanf(" %c",&ch);
     spaces = height - 1;
-    for(; height > 0 ; )
+    for(; height > 0 ; height--)
     {
         for(i = 0 ; i < spaces ; i++)
         {
@@ -24,7 +24,6 @@ int main(void)
         printf("\n");
         lines_char+=2;
         spaces--;
-        height--;
     }
     return 0;
 }
